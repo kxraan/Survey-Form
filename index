@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+      <form id="survey-form">
+        <div>
+        <label id="name-label">Name<input type="text" required id="name" placeholder="Enter your name"/></label>
+        <label id="email-label">Email<input type="email" required id="email" placeholder="Enter your email"/></label>
+          <label id="number-label">Age (optional)<input type="number" min="10" max="99" id="number" placeholder="Age"/></label>
+          <label>Which option best describes your current role?
+           <select id="dropdown">
+             <option disabled selected value>Select Current Role</option>
+             <option>Student</option>
+             <option>Full time job</option>
+             <option>Full time learner</option>
+             <option>Prefer not to say</option>
+             <option>Other</option>            
+           </select>
+          </label>
+          <label>Would you recommend freeCodeCamp to a friend?
+           <label><input class="inline" type="radio" name="ref" required value="def"/>Definetly</label>
+           <label><input class="inline" type="radio" name="ref" required value="maybe"/>Maybe</label>
+           <label><input class="inline" type="radio" name="ref" required value="not"/>Not sure</label>
+          </label>
+          <label>What is your favorite feature of freeCodeCamp?
+           <select id="favFeature">
+             <option disabled selected value>Select an option</option>
+             <option>Challenges</option>
+             <option>Projects</option>
+             <option>Community</option>
+             <option>Open space</option>
+           </select>
+          </label>
+          <label>What would you like to see improved? (Check all that apply)
+
+            <label><input class="inline" type="checkbox" required value="FrontEnd"/> Front-end Projects</label>
+              <label><input class="inline" type="checkbox" required value="BackEnd"/> Back-end Projects</label>
+                <label><input class="inline" type="checkbox" required value="Data"/> Data Visualization</label>
+                  <label><input class="inline" type="checkbox" required value="challenge"/> Challenges</label>
+
+          </label>
+
+          <label>Any comments or suggestions?
+            <textarea rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+          </label>
+          <input type="submit" id="submit"/>
+          </div>
+      </form>
+
+  </body>
+</html>
